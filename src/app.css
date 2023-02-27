@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .button-stnd{
+        @apply text-center mx-1 shadow-xl text-zinc-900 dark:text-stone-400 bg-stone-200 hover:bg-stone-400 dark:bg-zinc-700 dark:hover:bg-stone-500 rounded-md text-xs hover:scale-110 duration-300 transition ease-in-out delay-75;
+    }
+    .marked{
+        @apply font-bold text-zinc-900 dark:text-stone-400 duration-300 transition ease-in-out delay-75 hover:font-extrabold hover:scale-105 block mb-2
+    }
+    .non-marked{
+        @apply text-zinc-900 dark:text-stone-400 duration-300 transition ease-in-out delay-75 hover:font-bold hover:scale-105 block mb-2
+    }
+}
