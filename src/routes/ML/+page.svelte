@@ -30,6 +30,7 @@
                         ¿Qué es el Machine Learning?
                     </h2>
                     <p class="text-zinc-900 dark:text-stone-400 duration-300 transition ease-in-out delay-75 m-2 block">
+                        <span class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500 mx-2">=></span><span class="font-bold text-zinc-900 dark:text-stone-400 duration-300 transition ease-in-out delay-75">Definición</span><span class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500 mx-1">:</span> 
                         El Machine Learning <span class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500 mx-2">(Aprendizaje automático, en Español)</span>
                         es la rama de las <a class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500" href="/AI">Inteligencias Ártificiales</a> la cual investiga el entrenamiento de las Inteligencias Artificiales, como los distintos métodos del descenso del gradiente del coste de una IA <span class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500 mx-2">(Basicamente, la mejoría de la IA haciendo su tarea)</span>, ya sea con la retropropagación, mutación genética, o cualquier algoritmo de aprendizaje.
                     </p>
