@@ -19,6 +19,7 @@
                         <a href="{base}/BD" class="button-stnd mx-1 my-2 px-4">DM</a>
                         <a href="{base}/Cy" class="button-stnd mx-1 my-2 px-4">Cyb</a>
                         <a href="{base}/AI" class="button-stnd mx-1 my-2 px-4">IA</a>
+                        <a href="{base}/About" class="button-stnd mx-1 my-2 px-4 ml-auto">About</a>
                     </div>
                 </div>
             </div>
