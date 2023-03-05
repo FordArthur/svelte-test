@@ -3,6 +3,7 @@
     function DarkModeSwitcher (){
       DarkMode = (DarkMode === '') ? 'dark' : '';
     }
+    import { base } from '$app/paths'
 </script>
 <div class="{DarkMode}">
     <div class=" w-screen m-auto bg-neutral-200 dark:bg-zinc-900 duration-300 transition ease-in-out delay-75">
@@ -12,12 +13,12 @@
                     <div class="flex duration-300 transition ease-in-out delay-75">
                         <h1 class="drop-shadow-xl text-3xl font-sans mx-4 mb-2 text-zinc-900 dark:text-stone-400 hover:scale-105 transition ease-linear m-auto">Robótica <span class="transition ease-linear duration-150 hover:bg-lime-900 hover:text-stone-300 rounded-md"> Los Colegiales</span></h1>
                         <button class="button-stnd mx-4 my-2 inset-y-0 "on:click={DarkModeSwitcher}>Modosocuro</button>
-                        <a href="/" class="button-stnd mx-2 my-2 px-2">Início</a>
-                        <a href="/IoT" class="button-stnd mx-1 my-2 px-4">IoT</a>
-                        <a href="/ML" class="button-stnd mx-1 my-2 px-4">ML</a>
-                        <a href="/BD" class="button-stnd mx-1 my-2 px-4">DM</a>
-                        <a href="/Cy" class="button-stnd mx-1 my-2 px-4">Cyb</a>
-                        <a href="/AI" class="button-stnd mx-1 my-2 px-4">IA</a>
+                        <a href="{base}" class="button-stnd mx-2 my-2 px-2">Início</a>
+                        <a href="{base}/IoT" class="button-stnd mx-1 my-2 px-4">IoT</a>
+                        <a href="{base}/ML" class="button-stnd mx-1 my-2 px-4">ML</a>
+                        <a href="{base}/BD" class="button-stnd mx-1 my-2 px-4">DM</a>
+                        <a href="{base}/Cy" class="button-stnd mx-1 my-2 px-4">Cyb</a>
+                        <a href="{base}/AI" class="button-stnd mx-1 my-2 px-4">IA</a>
                     </div>
                 </div>
             </div>
@@ -83,7 +84,8 @@
                         Conclusión
                     </h2>
                     <p class="text-zinc-900 dark:text-stone-400 duration-300 transition ease-in-out delay-75 m-2 block">
-                        La robótica es una disciplina tecnológica que se enfoca en diseñar, construir y operar robots, que son máquinas programables capaces de realizar tareas automatizadas. Los robots se utilizan en una amplia variedad de industrias y también en la vida cotidiana de las personas, en forma de robots de limpieza, robots de entretenimiento y robots de asistencia para personas con discapacidad. La robótica ofrece la posibilidad de automatizar tareas repetitivas y peligrosas, lo que aumenta la seguridad en las operaciones y reduce la fatiga del personal. Aunque los robots tienen limitaciones en su capacidad de adaptarse a situaciones imprevistas y en su costo, su uso sigue aumentando en diferentes campos.
+                        En resumen, la robótica es una disciplina tecnológica interdisciplinaria que combina la mecánica, la electrónica y la informática para desarrollar robots capaces de realizar una amplia gama de tareas. Aunque hay limitaciones en su uso, la robótica tiene la capacidad de automatizar tareas peligrosas y repetitivas, lo que aumenta la seguridad y reduce la fatiga del personal en diversas industrias.
+                    </p>
  
             </div>
         </div>

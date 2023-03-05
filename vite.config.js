@@ -7,7 +7,8 @@ const config = {
 		fs: {
 		  allow: ['..']
 		}
-	  }
+	  },
+	base:'/svelte-app/'
 };
 
 export default config;

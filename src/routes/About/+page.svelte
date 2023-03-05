@@ -3,6 +3,7 @@
     function DarkModeSwitcher (){
       DarkMode = (DarkMode === '') ? 'dark' : '';
     }
+    import { base } from '$app/paths'
 </script>
 <div class="{DarkMode}">
     <div class=" w-screen h-screen m-auto bg-neutral-200 dark:bg-zinc-900 duration-300 transition ease-in-out delay-75">
@@ -12,12 +13,13 @@
                     <div class="flex duration-300 transition ease-in-out delay-75">
                         <h1 class="drop-shadow-xl text-3xl font-sans mx-4 mb-2 text-zinc-900 dark:text-stone-400 hover:scale-105 transition ease-linear m-auto">Robótica <span class="transition ease-linear duration-150 hover:bg-lime-900 hover:text-stone-300 rounded-md"> Los Colegiales</span></h1>
                         <button class="button-stnd mx-4 my-2 inset-y-0 "on:click={DarkModeSwitcher}>Modosocuro</button>
-                        <a href="/" class="button-stnd mx-2 my-2 px-2">Início</a>
-                        <a href="/IoT" class="button-stnd mx-1 my-2 px-4">IoT</a>
-                        <a href="/ML" class="button-stnd mx-1 my-2 px-4">ML</a>
-                        <a href="/Rb" class="button-stnd mx-1 my-2 px-4">Rób</a>
-                        <a href="/Cy" class="button-stnd mx-1 my-2 px-4">Cyb</a>
-                        <a href="/AI" class="button-stnd mx-1 my-2 px-4">IA</a>
+                        <a href="{base}" class="button-stnd mx-2 my-2 px-2">Início</a>
+                        <a href="{base}/IoT" class="button-stnd mx-1 my-2 px-4">IoT</a>
+                        <a href="{base}/ML" class="button-stnd mx-1 my-2 px-4">ML</a>
+                        <a href="{base}/Rb" class="button-stnd mx-1 my-2 px-4">Rób</a>
+                        <a href="{base}/Cy" class="button-stnd mx-1 my-2 px-4">Cyb</a>
+                        <a href="{base}/AI" class="button-stnd mx-1 my-2 px-4">IA</a>
+                        
                     </div>
                 </div>
             </div>

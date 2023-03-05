@@ -3,6 +3,7 @@
     function DarkModeSwitcher (){
       DarkMode = (DarkMode === '') ? 'dark' : '';
     }
+    import { base } from '$app/paths'
 </script>
 <div class="{DarkMode}">
     <div class=" w-screen m-auto bg-neutral-200 dark:bg-zinc-900 duration-300 transition ease-in-out delay-75">
@@ -12,12 +13,13 @@
                     <div class="flex duration-300 transition ease-in-out delay-75">
                         <h1 class="drop-shadow-xl text-3xl font-sans mx-4 mb-2 text-zinc-900 dark:text-stone-400 hover:scale-105 transition ease-linear m-auto">Robótica <span class="transition ease-linear duration-150 hover:bg-lime-900 hover:text-stone-300 rounded-md"> Los Colegiales</span></h1>
                         <button class="button-stnd mx-4 my-2 inset-y-0 "on:click={DarkModeSwitcher}>Modosocuro</button>
-                        <a href="/" class="button-stnd mx-2 my-2 px-2">Início</a>
-                        <a href="/IoT" class="button-stnd mx-1 my-2 px-4">IoT</a>
-                        <a href="/ML" class="button-stnd mx-1 my-2 px-4">ML</a>
-                        <a href="/Rb" class="button-stnd mx-1 my-2 px-4">Rób</a>
-                        <a href="/BD" class="button-stnd mx-1 my-2 px-4">DM</a>
-                        <a href="/AI" class="button-stnd mx-1 my-2 px-4">IA</a>
+                        <a href="{base}" class="button-stnd mx-2 my-2 px-2">Início</a>
+                        <a href="{base}/IoT" class="button-stnd mx-1 my-2 px-4">IoT</a>
+                        <a href="{base}/ML" class="button-stnd mx-1 my-2 px-4">ML</a>
+                        <a href="{base}/Rb" class="button-stnd mx-1 my-2 px-4">Rób</a>
+                        <a href="{base}/BD" class="button-stnd mx-1 my-2 px-4">DM</a>
+                        <a href="{base}/AI" class="button-stnd mx-1 my-2 px-4">IA</a>
+                        
                     </div>
                 </div>
             </div>
@@ -72,7 +74,7 @@
                     </p>
                     <ul class="list-disc ">
                         <li class="text-zinc-900 dark:text-stone-400 duration-300 transition ease-in-out delay-75 m-4">
-                            <span class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500 ">Ataque de denegación de servicio distribuido (DDoS):</span> Se habla mas de este tema en <a href="/IoT" class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500">la tangente del internet de las cosas</a>,este tipo de ataque tiene como objetivo inundar un sitio web o una red con tráfico no deseado para que los usuarios legítimos no puedan acceder a ellos.
+                            <span class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500 ">Ataque de denegación de servicio distribuido (DDoS):</span> Se habla mas de este tema en <a href="{base}/IoT" class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500">la tangente del internet de las cosas</a>,este tipo de ataque tiene como objetivo inundar un sitio web o una red con tráfico no deseado para que los usuarios legítimos no puedan acceder a ellos.
                         </li>
                         <li class="text-zinc-900 dark:text-stone-400 duration-300 transition ease-in-out delay-75 m-4">
                             <span class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500 ">Ataque de phishing:</span>os ataques de phishing son intentos de engañar a las personas para que revelen información personal, como contraseñas o información financiera. Los atacantes suelen utilizar correos electrónicos falsos o sitios web falsos para engañar a los usuarios.

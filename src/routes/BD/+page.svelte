@@ -3,6 +3,7 @@
     function DarkModeSwitcher (){
       DarkMode = (DarkMode === '') ? 'dark' : '';
     }
+    import { base } from '$app/paths'
 </script>
 <div class="{DarkMode}">
     <div class=" w-screen m-auto bg-neutral-200 dark:bg-zinc-900 duration-300 transition ease-in-out delay-75">
@@ -12,12 +13,12 @@
                     <div class="flex duration-300 transition ease-in-out delay-75">
                         <h1 class="drop-shadow-xl text-3xl font-sans mx-4 mb-2 text-zinc-900 dark:text-stone-400 hover:scale-105 transition ease-linear m-auto">Robótica <span class="transition ease-linear duration-150 hover:bg-lime-900 hover:text-stone-300 rounded-md"> Los Colegiales</span></h1>
                         <button class="button-stnd mx-4 my-2 inset-y-0 "on:click={DarkModeSwitcher}>Modosocuro</button>
-                        <a href="/" class="button-stnd mx-2 my-2 px-2">Início</a>
-                        <a href="/IoT" class="button-stnd mx-1 my-2 px-4">IoT</a>
-                        <a href="/ML" class="button-stnd mx-1 my-2 px-4">ML</a>
-                        <a href="/Rb" class="button-stnd mx-1 my-2 px-4">Rób</a>
-                        <a href="/Cy" class="button-stnd mx-1 my-2 px-4">Cyb</a>
-                        <a href="/AI" class="button-stnd mx-1 my-2 px-4">IA</a>
+                        <a href="{base}" class="button-stnd mx-2 my-2 px-2">Início</a>
+                        <a href="{base}/IoT" class="button-stnd mx-1 my-2 px-4">IoT</a>
+                        <a href="{base}/ML" class="button-stnd mx-1 my-2 px-4">ML</a>
+                        <a href="{base}/Rb" class="button-stnd mx-1 my-2 px-4">Rób</a>
+                        <a href="{base}/Cy" class="button-stnd mx-1 my-2 px-4">Cyb</a>
+                        <a href="{base}/AI" class="button-stnd mx-1 my-2 px-4">IA</a>
                     </div>
                 </div>
             </div>
@@ -30,13 +31,13 @@
                         ¿Qué es la big data?
                     </h2>
                     <p class="text-zinc-900 dark:text-stone-400 duration-300 transition ease-in-out delay-75 m-2 block">
-                        <img src="static/images/BD/BD-main.jpg" alt="hechos sobre la técnología IoT" class="rounded-xl w-80 h-52">
+                        <img src="https://cdn.discordapp.com/attachments/736298436885872731/1082002742937137212/BD-main.jpg" alt="hechos sobre la técnología IoT" class="rounded-xl w-80 h-52">
                         <span class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500 mx-2">=></span><span class="font-bold text-zinc-900 dark:text-stone-400 duration-300 transition ease-in-out delay-75">Definición</span><span class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500 mx-1">:</span> 
-                        El big data se refiere a conjuntos de datos que son tan grandes y complejos que los métodos tradicionales de procesamiento de datos no pueden manejarlos de manera eficiente. A continuación se presentan algunas aclaraciones y ejemplos de cómo el big data se relaciona con <a href="/AI" class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500">la inteligencia artificial</a> y el <a href="/IoT" class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500">machine learning</a>:
+                        El big data se refiere a conjuntos de datos que son tan grandes y complejos que los métodos tradicionales de procesamiento de datos no pueden manejarlos de manera eficiente. A continuación se presentan algunas aclaraciones y ejemplos de cómo el big data se relaciona con <a href="{base}/AI" class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500">la inteligencia artificial</a> y el <a href="{base}/IoT" class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500">machine learning</a>:
                     </p>
                     <ul class="list-disc ">
                         <li class="text-zinc-900 dark:text-stone-400 duration-300 transition ease-in-out delay-75 m-4">
-                º            <span class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500 ">La inteligencia artificial (IA) y el machine learning (ML) </span> son tecnologías que se utilizan para analizar grandes conjuntos de datos y extraer patrones y tendencias. La IA se refiere a sistemas que pueden realizar tareas que requieren inteligencia humana, como el aprendizaje, la toma de decisiones y el reconocimiento de patrones. El ML es una técnica de IA que utiliza algoritmos para aprender de los datos y mejorar su rendimiento en tareas específicas.
+                            <span class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500 ">La inteligencia artificial (IA) y el machine learning (ML) </span> son tecnologías que se utilizan para analizar grandes conjuntos de datos y extraer patrones y tendencias. La IA se refiere a sistemas que pueden realizar tareas que requieren inteligencia humana, como el aprendizaje, la toma de decisiones y el reconocimiento de patrones. El ML es una técnica de IA que utiliza algoritmos para aprender de los datos y mejorar su rendimiento en tareas específicas.
                         </li>
                         <li class="text-zinc-900 dark:text-stone-400 duration-300 transition ease-in-out delay-75 m-4">
                             <span class="font-bold text-emerald-800 dark:text-emerald-500 hover:text-amber-700 dark:hover:text-amber-500 ">El big data proporciona</span> una gran cantidad de datos para que los algoritmos de ML puedan aprender y mejorar su rendimiento. Por ejemplo, en el análisis de sentimientos en redes sociales, el big data proporciona una gran cantidad de datos para que los algoritmos de ML puedan aprender a identificar patrones y tendencias en las opiniones de los usuarios.
@@ -52,7 +53,7 @@
                         ¿Para que se usa la big data?
                     </h2>
                     <p class="text-zinc-900 dark:text-stone-400 duration-300 transition ease-in-out delay-75 m-2 block">
-                        <img src="static/images/BD/BD-storage.gif" alt="hechos sobre la técnología IoT" class="rounded-xl w-80 h-52">
+                        <img src="https://cdn.discordapp.com/attachments/736298436885872731/1082003760479486164/1.png" alt="hechos sobre la técnología IoT" class="rounded-xl w-80 h-52">
                         Algunas aplicaciones del big data incluyen:
                     </p>
                     <ul class="list-disc ">
